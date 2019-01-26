@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-STATICFILES_DIR = [STATIC_DIR, ]
+STATICFILES_DIRS = [STATIC_DIR, ]
 
 
 # Internationalization
