@@ -7,6 +7,10 @@
 
 {% block body_block %}
 	<h1> Rango says here is the about page </h1>
-
-	<img src="{{ MEDIA_URL}}cat.jpg" />
+	<p>This tutorial has been put together by Eivind</p>
+	<div>
+		<img src="{{ MEDIA_URL}}cat.jpg" />
+		<br>
+	</div>
+	<p>Visits: {{visits}}</p>
 {% endblock %}
