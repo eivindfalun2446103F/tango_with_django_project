@@ -22,7 +22,10 @@
           {% else %}
             <strong>No pages current in category.</strong>
           {% endif %}
-          <a heref="{% url 'add_page' category.slug %}">Add a Page</a>
+
+          {% if user.is_authenticated %}
+            <a heref="{% url 'add_page' category.slug %}">Add a Page</a>
+          {% endif %}
       {% else %}
         The specified category does not exist!
       {% endif %}
