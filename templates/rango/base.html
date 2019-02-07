@@ -7,7 +7,7 @@
 				<title>
 							Rango -
 							{% block title_block %}
-								How to Tango with Django
+								How to Tango with Django!
 							{% endblock %}
 				</title>
 		</head>
@@ -17,7 +17,6 @@
 		 					<!-- Page specific content goes here -->
 
 									{% block body_block %}
-										This is body_block's default content
 									{% endblock %}
 
 							</div>
@@ -27,7 +26,7 @@
 								<ul>
 
 
-									<<ul>
+									
 												{% if user.is_authenticated %}
 													<li><a href="{% url 'restricted' %}">Restricted Page</a></li>
 													<li><a href="{% url 'logout' %}">Logout</a></li>
